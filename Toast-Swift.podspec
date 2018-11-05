@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
-  s.name         = "Toast-Swift"
-  s.version      = "4.0.0"
+  s.name         = "LXToast-Swift"
+  s.version      = "4.0.1"
   s.summary      = "A Swift extension that adds toast notifications to the UIView object class."
-  s.homepage     = "https://github.com/scalessec/Toast-Swift"
+  s.homepage     = "https://github.com/IDEAL-YANG/Toast-Swift"
   s.license      = 'MIT'
-  s.author       = { "Charles Scalesse" => "scalessec@gmail.com" }
-  s.source       = { :git => "https://github.com/scalessec/Toast-Swift.git", :tag => "4.0.0" }
+  s.author       = { "Ideal Yang" => "idealyang@icloud.com" }
+  s.source       = { :git => "https://github.com/IDEAL-YANG/Toast-Swift.git", :tag => "4.0.1" }
   s.platform     = :ios
   s.source_files = 'Toast'   
   s.framework    = 'QuartzCore'
