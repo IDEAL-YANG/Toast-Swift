@@ -354,11 +354,11 @@ public extension UIView {
             toast.alpha = 1.0
         }) { _ in
             let timer = Timer(timeInterval: duration, target: self, selector: #selector(UIView.toastTimerDidFinish(_:)), userInfo: toast, repeats: false)
-//            #if swift(>=4.2)
+            #if swift(>=4.2)
             RunLoop.main.add(timer, forMode: RunLoop.Mode.common)
-//            #else
-//            RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
-//            #endif
+            #else
+            RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
+            #endif
             objc_setAssociatedObject(toast, &ToastKeys.timer, timer, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
